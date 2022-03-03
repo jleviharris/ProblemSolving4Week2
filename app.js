@@ -12,6 +12,33 @@
 // 6. Write a method to check if the characters a and b are separated by exactly 3 places anywhere (at least once) in a given string.
 
 // 7. Write a method to check if a given string contains equal number of p's and t's present.
+// Create a function that takes a string
+// Loop through the string
+// count the number of p's and t's 
+// see if p's equal t's
+let p = 1;
+let t = 1;
+let string = prompt("Enter text to see if p's = t's");
+function PAndT (string) {
+    for (let i=0; i<string.length; i++){
+        if (string[i] === "p"){
+            p++;
+        } else if (string[i] === "t"){
+            t++;
+        };
+     
+    }   if (t>p){
+        console.log(`There is ${t -p} more t's than p's`);
+        alert(`There are ${t -p} mnore t's than p's`);
+    } else if (t<p){
+        console.log(`There is ${p - t} more t's than p's`);
+        alert(`There are ${p - t} mnore t's than p's`);
+    } else if (p=t){
+        console.log("There are the same number of p's as t's");
+        alert("There are the same number of p's as t's.");
+    }
+};
+PAndT(string);
 
 // 8. Write a method to compute the sum of all digits that occur in a given string. 
 
