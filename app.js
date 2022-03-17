@@ -1,9 +1,18 @@
 "use strict"
 // 1. Write a method that prints the next 20 leap years.
+function printLeapYears(){
+
+};
 
 // 2. Write a method that finds the longest palindromic substring of a given string.
+function longestPalindromic(string){
+
+};
 
 // 3. Write a method to convert a given number to hours and minutes.
+function convertToHoursAndMins(number){
+
+};
 
 // 4. Write a method to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference
 
@@ -26,7 +35,6 @@ function PAndT (string) {
         } else if (string[i] === "t"){
             t++;
         };
-     
     }   if (t>p){
         console.log(`There is ${t -p} more t's than p's`);
         alert(`There are ${t -p} mnore t's than p's`);
@@ -41,11 +49,31 @@ function PAndT (string) {
 PAndT(string);
 
 // 8. Write a method to compute the sum of all digits that occur in a given string. 
+string = prompt("Enter text with numbers and I'll tell you how many numbers you've entered")
+function numOfDigits(string){
+
+};
 
 // 9. Write a method to check whether a given fraction is proper or not.  Note: There are two types of common fractions, proper or improper. When the numerator and the denominator are both positive, the fraction is called proper if the numerator is less than the denominator, and improper otherwise.
+//create a function that takes in a string
+// split the string where there is a division sign
+// check if the fraction is proper or not
+// retrun the answer
+function isItProper(string){
 
+};
 // 10. Write function that translates a text to Pig Latin and back. English is translated to Pig Latin by taking the first letter of every word, moving it to the end of the word and adding ‘ay’. “The quick brown fox” becomes “Hetay uickqay rownbay oxfay”
+string = prompt("Enter your text and I'll translate to Pig Latin");
+function pigLatin (string){
+
+}
 
 // 11. Write a method that returns the largest element in an array.
+function largestElement(array){
+
+}
 
 // 12. Write a method that rotates a list by k elements. You input a value for k that represents how many places in the array you want to rotate by. For example, if k is rotated by 2, 
+function rotateByK(array){
+
+};
