@@ -10,39 +10,40 @@
 // };
 
 // 3. Write a method to convert a given number to hours and minutes.
-// function convertToHoursAndMins(number){
-
-// };
-
+function convertToHoursAndMins(string){
+    string = parseInt(prompt('Enter minutes and ill convert to hours and minutes'))
+    let exactHours = string / 60;
+    let hours = Math.floor(exactHours);
+    let mins = ((string/60)-hours)*60;
+    alert(`${hours} Hours and ${mins} minutes`);
+};
+convertToHoursAndMins();
 // 4. Write a method to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference
 
 // 5. Write a method to check from three given numbers (non negative integers) that two or all of them have the same rightmost digit.
 
 // 6. Write a method to check if the characters a and b are separated by exactly 3 places anywhere (at least once) in a given string.
-
-function aAndB (string){
-    string = prompt('Enter text and ill tell you if there is an "a" and "b" seperated by three places');
-    for (let i=0; i<string.length; i++){
-        if(string[i]=== 'a'){
-            if(string[i+4]=== 'b'){
-                alert('There is an a and b seperated by three spaces in this string');
-                return;
-            }
-        }else {i++;
-        }
-    }alert('There is no "a" and "b" seperated by three places')}
-
-aAndB();
+// Finished
+// function aAndB (string){
+//     string = prompt('Enter text and ill tell you if there is an "a" and "b" seperated by three places');
+//     for (let i=0; i<string.length; i++){
+//         if(string[i]=== 'a'){
+//             if(string[i+4]=== 'b'){
+//                 alert('There is an a and b seperated by three spaces in this string');
+//                 return;
+//             }
+//         }else {i++;
+//         }
+//     }alert('There is no "a" and "b" seperated by three places')};
+// aAndB();
 
 // 7. Write a method to check if a given string contains equal number of p's and t's present.
-// Create a function that takes a string
-// Loop through the string
-// count the number of p's and t's 
-// see if p's equal t's
+//Finished
 // let p = 1;
 // let t = 1;
-// let string = prompt("Enter text to see if p's = t's");
+// let string;
 // function PAndT (string) {
+//     string = prompt("Enter text to see if p's = t's");
 //     for (let i=0; i<string.length; i++){
 //         if (string[i] === "p"){
 //             p++;
