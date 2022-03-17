@@ -10,14 +10,15 @@
 // };
 
 // 3. Write a method to convert a given number to hours and minutes.
-function convertToHoursAndMins(string){
-    string = parseInt(prompt('Enter minutes and ill convert to hours and minutes'))
-    let exactHours = string / 60;
-    let hours = Math.floor(exactHours);
-    let mins = ((string/60)-hours)*60;
-    alert(`${hours} Hours and ${mins} minutes`);
-};
-convertToHoursAndMins();
+//Finished
+// function convertToHoursAndMins(string){
+//     string = parseInt(prompt('Enter minutes and ill convert to hours and minutes'))
+//     let exactHours = string / 60;
+//     let hours = Math.floor(exactHours);
+//     let mins = ((string/60)-hours)*60;
+//     alert(`${hours} Hours and ${mins} minutes`);
+// };
+// convertToHoursAndMins();
 // 4. Write a method to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference
 
 // 5. Write a method to check from three given numbers (non negative integers) that two or all of them have the same rightmost digit.
@@ -64,7 +65,7 @@ convertToHoursAndMins();
 // PAndT(string);
 
 // 8. Write a method to compute the sum of all digits that occur in a given string. 
-// string = prompt("Enter text with numbers and I'll tell you how many numbers you've entered")
+// string = prompt("Enter text with numbers and I'll tell you the sum of all the numbers you've entered")
 // function numOfDigits(string){
 
 // };
@@ -84,10 +85,26 @@ convertToHoursAndMins();
 // }
 
 // 11. Write a method that returns the largest element in an array.
-// function largestElement(array){
-
-// }
-
+function largestElement(array){
+    
+    for (let i=0; i<array.length;i++){
+        for (let j=1; j<array.length;j++){
+            if (array[i]<array[j]){
+                array.shift();
+                j--;
+            } else if (array[i]>array[j]){
+                array.push(array[i]);
+                array.shift();
+                j--;
+            } else if (array[i] === array[j]){
+                array.shift();
+                j--;
+            }
+        }
+    }alert(array);
+}
+    let array = [1, 2, 5, 8, 9, 33, 33, 10, 4, 9, 105];
+    largestElement(array);
 // 12. Write a method that rotates a list by k elements. You input a value for k that represents how many places in the array you want to rotate by. For example, if k is rotated by 2, 
 // function rotateByK(array){
 
